@@ -21,5 +21,14 @@
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_local_news">LocalNewsActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="GoodVibeTitle1">Cake for me!!</string>
+    <string name="GoodVibe1">Someone got me some cake! How nice!</string>
+    <string-array name="GoodVibeTitles"></string-array>
+    <string name="ClickToPost">Click to view the full post</string>
+    <string name="GoodVibeFull">Cake is tasty! I love that someone got me this cake.</string>
+    <string name="Return">Return to List of Good Vibes</string>
+    <string name="GoodVibeTitle2">Safe Cat!</string>
+    <string name="GoodVibe2">Someone saved my cat!</string>
+    <string name="GoodVibeFull2">Someone saved my cat! It was stuck in a tree, but someone rescued him!</string>
 
 </resources>

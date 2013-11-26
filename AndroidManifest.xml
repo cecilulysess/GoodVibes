@@ -42,6 +42,10 @@
             android:name="com.teamgv.goodvibes.ProfileActivity"
             android:label="@string/title_activity_profile" >
         </activity>
+        <activity 
+            android:name="FullPost" 
+            android:label='@string/GoodVibeTitle1'>
+        </activity>
     </application>
 
 </manifest>
