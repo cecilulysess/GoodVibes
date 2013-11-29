@@ -21,6 +21,8 @@
     <string name="title_activity_local_news">LocalNewsActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_about">AboutActivity</string>
-    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
 	<string name="action_settings">Setting</string>
+	
+	<string name="about">GoodVibes is an app let people share the positive events, random acts of kindness, and courage behaviors at local area instantly.</string>
 </resources>

@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="GoodVibes"
-        android:theme="@style/GoodVibesTheme" >
+        android:theme="@style/Theme.Goodvibes" >
         <activity
             android:name="com.teamgv.goodvibes.MainActivity"
             android:label="GoodVibes" >
