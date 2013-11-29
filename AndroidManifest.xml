@@ -9,13 +9,14 @@
         android:targetSdkVersion="18" />
 
     <application
+        android:name="com.teamgv.goodvibes.GoodVibes"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/app_theme" >
+        android:label="GoodVibes"
+        android:theme="@style/GoodVibesTheme" >
         <activity
             android:name="com.teamgv.goodvibes.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="GoodVibes" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,6 +42,10 @@
         <activity
             android:name="com.teamgv.goodvibes.ProfileActivity"
             android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.teamgv.goodvibes.AboutActivity"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:left="@dimen/tab_space" android:right="@dimen/tab_space"> 
-		<shape android:shape="rectangle">
-			<gradient android:angle="-90" android:startColor="@color/tabMedium"
-				android:endColor="@color/tabDark" />
-			<corners android:bottomLeftRadius="@dimen/corner_radius_zero"
-				android:bottomRightRadius="@dimen/corner_radius_zero" 
-				android:topLeftRadius="@dimen/corner_radius"
-				android:topRightRadius="@dimen/corner_radius"
-				/>
-		
-		</shape>
-	</item>
+
 	<!-- draw tab background -->
 	<item android:top="0sp" android:bottom="0sp">
 		<shape android:shape="rectangle">
-			<solid android:color="@color/tabTransparent" />
+			<solid android:color="@color/centerTabBgColor" />
 			
 		</shape>
 	</item>
 	<item android:left="0sp" android:top="0sp"
                 android:right="0sp" android:bottom="0sp"> 
 		<shape android:shape="rectangle">
-			<corners android:bottomLeftRadius="@dimen/corner_radius"
-				android:bottomRightRadius="@dimen/corner_radius" 
-				android:topLeftRadius="@dimen/corner_radius"
-				android:topRightRadius="@dimen/corner_radius"
+			<corners android:bottomLeftRadius="@dimen/corner_radius_zero"
+				android:bottomRightRadius="@dimen/corner_radius_zero" 
+				android:topLeftRadius="@dimen/corner_radius_zero"
+				android:topRightRadius="@dimen/corner_radius_zero"
 				/>
-			<gradient android:angle="-90" android:startColor="#20feff8f"
+			<gradient android:angle="-90" android:startColor="@color/centerTabPressed"
 			
-				android:endColor="#20feff8f" />
+				android:endColor="@color/centerTabPressed" />
 			
 		</shape>
 	</item>

@@ -1,11 +1,13 @@
 package com.teamgv.goodvibes;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
@@ -20,6 +22,7 @@ public class MainActivity extends TabActivity {
 		setContentView(R.layout.activity_main);
 		tabHost = getTabHost();
 		setTabs();
+
 	}
 
 	private void setTabs()
@@ -27,8 +30,10 @@ public class MainActivity extends TabActivity {
 		addTab("Home", R.drawable.tab_home, HomeActivity.class);
 		addTab("Local", R.drawable.tab_local_news, LocalNewsActivity.class);
 		addTab("Fake", R.drawable.tab_local_news, LocalNewsActivity.class);
-		addTab("Home", R.drawable.tab_profile, ProfileActivity.class);
-		addTab("Local", R.drawable.tab_local_news, LocalNewsActivity.class);
+		addTab("Profile", R.drawable.tab_profile, ProfileActivity.class);
+		addTab("About", R.drawable.tab_about, AboutActivity.class);
+		tabHost.getTabWidget().getChildAt(2).setFocusable(false);
+		tabHost.getTabWidget().getChildAt(2).setActivated(false);
 	}
 	private void addTab(String labelId, int drawableId, Class<?> c)
 	{
@@ -53,9 +58,10 @@ public class MainActivity extends TabActivity {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	    // Inflate the menu items for use in the action bar
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.main_activity_actions, menu);
+	    return super.onCreateOptionsMenu(menu);
 	}
 
 }

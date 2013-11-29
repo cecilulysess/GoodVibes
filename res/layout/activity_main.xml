@@ -34,6 +34,6 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/center_tab_indicator"
         android:onClick="openCameraActivity"
-        android:src="@drawable/post" android:contentDescription="TODO"/>
+        android:src="@drawable/post" android:contentDescription="PostAPost"/>
 
 </RelativeLayout>
