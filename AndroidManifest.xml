@@ -8,6 +8,7 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="18" />
 
+    <uses-feature android:name="android.hardware.camera"></uses-feature> 
     <application
         android:name="com.teamgv.goodvibes.GoodVibes"
         android:allowBackup="true"
@@ -25,7 +26,8 @@
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.CreatePostActivity"
-            android:label="@string/title_activity_create_post" >
+            android:label="@string/title_activity_create_post"
+            android:parentActivityName="com.teamgv.goodvibes.MainActivity" >
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.HomeActivity"
@@ -33,19 +35,23 @@
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.SearchActivity"
-            android:label="@string/title_activity_search" >
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.teamgv.goodvibes.MainActivity" >
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.LocalNewsActivity"
-            android:label="@string/title_activity_local_news" >
+            android:label="@string/title_activity_local_news"
+            android:parentActivityName="com.teamgv.goodvibes.MainActivity" >
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.ProfileActivity"
-            android:label="@string/title_activity_profile" >
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.teamgv.goodvibes.MainActivity" >
         </activity>
         <activity
             android:name="com.teamgv.goodvibes.AboutActivity"
-            android:label="@string/title_activity_about" >
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.teamgv.goodvibes.MainActivity" >
         </activity>
     </application>
 

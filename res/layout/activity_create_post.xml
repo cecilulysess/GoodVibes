@@ -9,22 +9,60 @@
     tools:context=".CreatePostActivity" >
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical" >
 
-        <Button
-            android:layout_width="fill_parent"
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="takePhotoCamera"
-            android:text="Take Photo from Camera" />
+            android:layout_gravity="top"
+            android:ems="10"
+            android:hint="@string/enter_title_hint"
+            android:minEms="16"
+            android:singleLine="true" >
 
-        <Button
-            android:layout_width="fill_parent"
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginRight="@dimen/create_post_label_padding_right"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.65"
+                android:ems="10"
+                android:hint="@string/enter_words_hint"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_action_camera"
+                android:background="@color/centerTabBgColor"
+                android:onClick="takePhotoCamera" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="pickFromGallery"
-            android:text="Select Photo from Gallery" />
+            android:background="#00000000"
+            android:scaleType="center" />
 
     </LinearLayout>
-
 </RelativeLayout>

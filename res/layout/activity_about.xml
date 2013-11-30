@@ -124,7 +124,11 @@
                             android:layout_height="wrap_content"
                             android:text="Visit Our Progress Site"
                             android:textColor="@android:color/white"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            android:clickable="true"
+                            android:autoLink="web"
+                            android:linksClickable="true"
+                             />
 
                     </LinearLayout>
 

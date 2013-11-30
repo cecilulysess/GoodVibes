@@ -22,7 +22,8 @@ public class MainActivity extends TabActivity {
 		setContentView(R.layout.activity_main);
 		tabHost = getTabHost();
 		setTabs();
-
+		
+		
 	}
 
 	private void setTabs()
@@ -50,7 +51,7 @@ public class MainActivity extends TabActivity {
 		tabHost.addTab(spec);
 	}
 	
-	public void openCameraActivity(View b)
+	public void openCreatePostActivity(View b)
 	{
 		Intent intent = new Intent(this, CreatePostActivity.class);
 		startActivity(intent);

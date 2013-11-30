@@ -22,7 +22,14 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="action_refresh">Refresh</string>
-	<string name="action_settings">Setting</string>
-	
-	<string name="about">GoodVibes is an app let people share the positive events, random acts of kindness, and courage behaviors at local area instantly.</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_post">Post</string>
+    <string name="about">GoodVibes is an app let people share the positive events, random acts of kindness, and courage behaviors at local area instantly.</string>
+    <string name="title_activity_take_picture">TakePictureActivity</string>
+    <string name="take_photo">TakePhoto</string>
+    <string name="enter_title_hint">Title</string>
+    <string name="enter_words_hint">Put some words :)</string>
+    
+    
+
 </resources>
