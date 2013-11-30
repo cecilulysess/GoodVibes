@@ -9,6 +9,8 @@
         android:targetSdkVersion="18" />
 
     <uses-feature android:name="android.hardware.camera"></uses-feature> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
         android:name="com.teamgv.goodvibes.GoodVibes"
         android:allowBackup="true"
