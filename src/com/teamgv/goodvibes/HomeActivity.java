@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 
 import java.util.ArrayList;
+import android.view.MenuInflater;
 
 public class HomeActivity extends Activity {
 	

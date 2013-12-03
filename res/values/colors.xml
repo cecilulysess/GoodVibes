@@ -3,6 +3,11 @@
 	
 	<color name="tabMedium">#e7dc70</color>
 	<color name="tabDark">#8a8342</color>
-	<color name="tabTransparent">#d4d571</color>
-	
+	<color name="tabTransparent">#773ba69b</color>
+	<color name="centerTabBgColor">#3ba69b</color>
+	<color name="bgColor">#000</color>
+	<color name="tabSelectHighlighter">#3ba69b</color>
+	<color name="centerTabPressed">#7748ccbe</color>
+	<color name="normalTabBgColor">#eb8f2b</color>
+	<color name="selectedTabBgColor">#e8b71f</color>
 </resources>
