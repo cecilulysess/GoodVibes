@@ -19,7 +19,9 @@ public class FullPost extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.full_post);
-		
+		//Julian: Navigator back button
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		//--------------------------
 		SharedPreferences transfer = getSharedPreferences(PREFS_NAME, 0);
 		String headline = transfer.getString("Title", "error");
 		String post = transfer.getString("Full Post", "error");

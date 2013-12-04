@@ -91,8 +91,10 @@ public class HomeActivity extends Activity {
 				edit.putString("Title", headlines.get(whichOne));
 				edit.putString("Full Post", fullPosts.get(whichOne));
 				edit.commit();
-				
+				//Julian: To fix the issue of missing tabs. You need change the first argument 
+				// to "this" or your HomeActivity. Thus, you should not declare this with anonymous class
 				Intent i = new Intent(getApplicationContext(), FullPost.class);
+//				Intent i = new Intent(this, FullPost.class);
 				startActivity(i);
 			}
 		});

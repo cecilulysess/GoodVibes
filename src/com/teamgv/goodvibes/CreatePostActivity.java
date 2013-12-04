@@ -57,9 +57,11 @@ public class CreatePostActivity extends Activity implements LocationListener{
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (Exception err) {
+			city = "Location Services Not Available";
 		}
 		
-		location.setText(city + loc.getLatitude() + ", " + loc.getLongitude());
+		location.setText(city); // + loc.getLatitude() + ", " + loc.getLongitude());
 	    	
 	}
 
@@ -91,16 +93,7 @@ public class CreatePostActivity extends Activity implements LocationListener{
 		}
 		
 	}
-	
-    public void takePhotoCamera(View v)
-    {
-    	Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE); 
-        startActivityForResult(cameraIntent, CAMERA_REQUEST); 
-    }
-    
-    public void pickFromGallery(View v) {
-		Toast.makeText(this, "That was really awesom, isn't that?", Toast.LENGTH_LONG).show();
-	}
+
     
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {  
         if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) {  
@@ -127,7 +120,7 @@ public class CreatePostActivity extends Activity implements LocationListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	this.location.setText(city + location.getLatitude() + ", " + location.getLongitude());
+    	this.location.setText(city); // + location.getLatitude() + ", " + location.getLongitude());
     }
 
 	@Override
